@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/devel
+
+Name: dodgeros
+Description: Description of dodgeros
+Version: 0.0.1
+Cflags: -I/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgeros/dodgeros/include
+Libs: -L${prefix}/lib -lros_pilot
+Requires: dodgelib dodgeros_msgs std_msgs nav_msgs sensor_msgs geometry_msgs roscpp rosgraph_msgs visualization_msgs mav_msgs message_generation message_runtime

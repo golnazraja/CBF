@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/devel
+
+Name: dodgelib
+Description: Description of dodgelib
+Version: 0.0.1
+Cflags: -I/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgelib/include
+Libs: -L${prefix}/lib -ldodgelib
+Requires: 

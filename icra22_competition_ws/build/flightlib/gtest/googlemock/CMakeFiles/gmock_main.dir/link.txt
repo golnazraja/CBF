@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -fdiagnostics-color -fdiagnostics-color -fPIC -Wall -DNDEBUG  -fopenmp  -O2  -march=native   -shared -Wl,-soname,libgmock_main.so -o ../lib/libgmock_main.so CMakeFiles/gmock_main.dir/src/gmock_main.cc.o  -Wl,-rpath,/home/golnaz/test/icra22_competition_ws/build/flightlib/gtest/lib ../lib/libgmock.so ../lib/libgtest.so -lpthread 

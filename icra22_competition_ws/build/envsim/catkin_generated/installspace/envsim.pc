@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/install
+
+Name: envsim
+Description: Description of envsim
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: dodgelib dodgeros cv_bridge envsim_msgs flightlib image_transport roscpp rosgraph_msgs

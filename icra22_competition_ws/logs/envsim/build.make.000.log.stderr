@@ -1,0 +1,17 @@
+In file included from [01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgelib/include/dodgelib/base/pipeline.hpp:7[m[K,
+                 from [01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgelib/include/dodgelib/pilot/pilot.hpp:3[m[K,
+                 from [01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgeros/dodgeros/include/dodgeros/ros_pilot.hpp:11[m[K,
+                 from [01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/include/envsim/visionsim.hpp:24[m[K,
+                 from [01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/src/visionsim_node.cpp:4[m[K:
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgelib/include/dodgelib/controller/controller_base.hpp:[m[K In member function ‘[01m[Kvirtual void agi::ControllerBase::addImuSample(const agi::ImuSample&)[m[K’:
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/dodgedrone_simulation/dodgelib/include/dodgelib/controller/controller_base.hpp:23:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksample[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   23 |   virtual void addImuSample([01;35m[Kconst ImuSample& sample[m[K) {}
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/src/visionsim_node.cpp:[m[K In constructor ‘[01m[Kagi::VisionSim::VisionSim(const ros::NodeHandle&, const ros::NodeHandle&)[m[K’:
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/src/visionsim_node.cpp:40:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgot_directory[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   40 |   const bool [01;35m[Kgot_directory[m[K =
+      |              [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/src/visionsim_node.cpp:[m[K In member function ‘[01m[Kvoid agi::VisionSim::resetCallback(const EmptyConstPtr&)[m[K’:
+[01m[K/home/golnaz/test/icra22_competition_ws/src/agile_flight/envsim/src/visionsim_node.cpp:74:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   74 | void VisionSim::resetCallback([01;35m[Kconst std_msgs::EmptyConstPtr &msg[m[K) {
+      |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

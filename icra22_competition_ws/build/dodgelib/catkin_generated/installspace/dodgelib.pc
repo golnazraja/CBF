@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/install
+
+Name: dodgelib
+Description: Description of dodgelib
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldodgelib
+Requires: 

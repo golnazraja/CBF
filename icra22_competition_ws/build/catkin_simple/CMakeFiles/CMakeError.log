@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ceed/fast && /usr/bin/make -f CMakeFiles/cmTC_3ceed.dir/build.make CMakeFiles/cmTC_3ceed.dir/build
+make[1]: Entering directory '/home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ceed.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3ceed.dir/src.c.o   -c /home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3ceed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ceed.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_3ceed.dir/src.c.o  -o cmTC_3ceed 
+/usr/bin/ld: CMakeFiles/cmTC_3ceed.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3ceed.dir/build.make:87: cmTC_3ceed] Error 1
+make[1]: Leaving directory '/home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3ceed/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fb960/fast && /usr/bin/make -f CMakeFiles/cmTC_fb960.dir/build.make CMakeFiles/cmTC_fb960.dir/build
+make[1]: Entering directory '/home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb960.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fb960.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fb960
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb960.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fb960.dir/CheckFunctionExists.c.o  -o cmTC_fb960  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fb960.dir/build.make:87: cmTC_fb960] Error 1
+make[1]: Leaving directory '/home/golnaz/test/icra22_competition_ws/build/catkin_simple/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fb960/fast] Error 2
+
+
+

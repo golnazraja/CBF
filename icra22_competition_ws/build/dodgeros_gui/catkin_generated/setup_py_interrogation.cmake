@@ -1,0 +1,7 @@
+set(dodgeros_gui_SETUP_PY_SETUP_MODULE "distutils.core")
+set(dodgeros_gui_SETUP_PY_VERSION "0.0.0")
+set(dodgeros_gui_SETUP_PY_SCRIPTS "")
+set(dodgeros_gui_SETUP_PY_PACKAGES "dodgeros_gui")
+set(dodgeros_gui_SETUP_PY_PACKAGE_DIRS "src/dodgeros_gui")
+set(dodgeros_gui_SETUP_PY_MODULES "")
+set(dodgeros_gui_SETUP_PY_MODULE_DIRS "")

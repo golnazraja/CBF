@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/devel
+
+Name: dodgeros_gui
+Description: Description of dodgeros_gui
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs rospy rqt_gui rqt_gui_py std_msgs

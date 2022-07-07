@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/install
+
+Name: flightrender
+Description: Description of flightrender
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/golnaz/test/icra22_competition_ws/install
+
+Name: flightlib
+Description: Description of flightlib
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lflightlib
+Requires: 

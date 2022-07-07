@@ -1,0 +1,6 @@
+devel_space: /home/golnaz/test/icra22_competition_ws/devel
+install: false
+install_space: /home/golnaz/test/icra22_competition_ws/install
+profile: default
+source_space: /home/golnaz/test/icra22_competition_ws/src
+workspace: /home/golnaz/test/icra22_competition_ws
